@@ -1,0 +1,352 @@
+body {
+    background: white url(../images/flamingos.png) top left / 100vw auto repeat;
+    background-repeat: repeat; /* Repeats the image */
+    background-position: top left; /* Position of the image */
+    background-color: #BD986B;	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	margin:0;
+	padding:0;
+}
+
+div, header, main, section, article, {
+    border: 1px solid black;
+}
+
+nav {
+
+    margin-bottom: 30px;
+}
+
+nav ul {
+    align-items: center;
+    gap: 8vw;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    justify-content: center;
+    padding: 15px
+}
+
+nav ul li {
+    padding: 0px 10px;
+    text-align: center;
+    border-left: 1px solid #2E2E2E;
+}
+
+
+
+img {
+    width :100%;
+    height: 100%;
+}
+
+a { font-family: 'Open Sans', sans-serif;
+    font-weight: 630;
+    color: #2E2E2E;
+    text-decoration: none
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px
+}
+.logo {
+    width: 250px;
+    margin: 20px auto 20px auto;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f0c5;
+}
+
+
+.contact-heading {
+    text-align: left;
+    margin: 0;
+    background-color:#2E2E2E;
+    color: white;
+    padding: 0.5em;
+}
+h1 {
+    color: #2E2E2E;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h1 {
+    padding: 10px 0px 0px 0px;
+}
+
+h2 { 
+    text-align: center;
+    color: #2E2E2E;
+}
+
+h3 { 
+    text-align: center;
+    color: #2E2E2E;
+}
+
+.collections {
+    color: black;
+    text-align: center;
+    text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+}
+
+.featured{
+    text-align: center;
+}
+
+.intro {
+    margin: 6% 0%;
+}
+
+#box1 {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin: 3% auto;
+    max-width: 50vw;
+    padding: 20px;
+    background-color: #fbeec1;
+    border-radius: 15px;
+}
+
+#another-box1 {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin: 3% auto;
+    max-width: 50vw;
+    padding: 20px;
+    background-color: #fbeec1;
+    border-radius: 15px;
+}
+
+.disclaimer {
+    background-color: #d60606;
+    padding: 20px;
+    margin: 30px;
+}
+
+b {
+    text-align: center;
+}
+
+.sale {
+    display: flex;
+    justify-content: center;
+}
+
+.box1 {
+    text-align: center;
+}
+.page-wrap {
+    background: linear-gradient(to bottom right, #BD986B, #86542e);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    max-width: 80vw;
+    position: relative;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.gallery-image {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 100%;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+}
+
+.footerbox {
+    display: flex;
+    flex-direction: column;
+    background-color: #2E2E2E;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    line-height: 10px;
+}
+
+.footerbox a p {
+    color: white;
+}
+
+.gallery1{
+
+}
+
+.welcome{
+
+}
+
+.creviews{
+    text-align:center;
+    text-shadow:3px 3px 0
+    rgba(0,0,0,0.1);
+}
+
+p {  
+    color: #2E2E2E;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container2{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin: 3% auto;
+    max-width: 50vw;
+    padding: 20px;
+    background-color: #fbeec1;
+    border-radius: 15px;
+}
+
+.container2 input {
+    text-align: center;
+}
+
+.gallery {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.pic-container img {
+  width: 100%;
+}
+
+.product-items {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 10px; /* Optional: Adjust the space between images */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.product-text {
+    width :80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 4% auto 8% auto;
+}
+
+.para {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #fbeec1;
+    margin: 11px;
+    text-align: center;
+    grid-column: span 1;
+}
+
+.para p {
+    padding: 0px 15px 15px 15px;
+}
+
+.titles {
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1;
+}
+
+.image img {
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+
+}
+
+#googleMap {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    width :100%;
+    margin: 0 auto;
+}
+
+.reviews {
+    padding: 40px;
+    gap: 20px;
+    text-align: center;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.review-items {
+    background-color: #bd986b;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    grid-column: span 1;
+    padding: 20px 40px;
+}
+
+.stars { 
+    padding: 25px;
+}
+
+.container3 { 
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin: 3% auto;
+    max-width: 50vw;
+    padding: 20px;
+    background-color: #fbeec1;
+    border-radius: 15px;
+}
+
+.clearfix{
+    text-align: center;
+}
+
+.yr{
+    text-align: center;
+}
+
+.wr{
+    text-align:center;
+    text-shadow:3px 3px 0
+    rgba(0,0,0,0.1);
+}
+
+.sale{
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 500px) {
+
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li {
+    }
+    .contact{ 
+        flex-direction: row }
+
