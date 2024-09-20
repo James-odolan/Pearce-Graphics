@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Spear Graphics - Home</title>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<style>
+			.lightbox-content {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 750px !important;
+				animation: zoomIn 0.5s ease-in-out; /* Zoom-in effect */
+			}
+			/* Simple styling for lightbox */
+			.lightbox {
+				display: none;
+				position: fixed;
+				z-index: 10;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				justify-content: center;
+				align-items: center;
+			}
+			.close {
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: white;
+				font-size: 35px;
+				cursor: pointer;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h3 class="contact-heading">Contact us at: 0********** | Based in Harrogate</h3>
+		<header>
+			<div class="logo">
+				<img src="images/pearce-logo.png" alt="logo">
+			</div>
+		</header>
+
+		<div class="page-wrap">
+			<nav>
+				<ul>
+					<li><a href="index1.html">Home</a></li>
+					<li><a href="giftpage.html">Gifts</a></li>
+					<li><a href="aboutpage.html">About</a></li>
+					<li><a href="Reviewpage.html">Reviews</a></li>
+				</ul>
+			</nav>
+			<div class="intro">
+				<h2 class="welcome">Welcome to our page!</h2>
+				<div id="box1">
+					<p>Introducing Spear Graphics, Bringing you a whole multitude of products through both digital and hand drawn artwork! Keep an eye out for our instagram @Speargraphics for our latest posts.</p> 
+					<p>We intend to deliver you a wonderful range of personalised artistic products. Perfect for gifts and decoration.</p>
+				</div>
+			</div>
+
+			<div id="Gallery">
+				<h2 class="gallery1">Gallery</h2>
+				<div class="container1">
+					<div class="gallery">
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des1.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des2.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des3.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des4.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des5.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des6.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des7.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des8.png" alt="SALE">
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-image lightbox-trigger" src="images/des9.png" alt="SALE">
+						</div>
+					</div>
+
+					<div id="another-box1">
+						<p>As you can see on these displays, we offer an extensive selection of unique and bold designs that cater to a variety of tastes and styles, ensuring that there's something for everyone. Our team is deeply committed to delivering truly high-quality work, paying close attention to every detail and leaving no stone unturned in the pursuit of perfection.</p>
+						<p>From the initial concept to the final product, we strive for excellence in craftsmanship, innovation, and customer satisfaction, always going the extra mile to ensure that each piece not only meets but exceeds expectations. Whether you're looking for something classic or more avant-garde, we are confident that our designs will inspire and impress.</p> 
+					</div>
+
+					<div class="disclaimer">
+						<h1>DISCLAIMER: THIS IS A FICTIONAL GRAPHIC DESIGN STORE PROJECT</h1>
+						<p>This website and all its content are part of a creative mockup project for demonstration and educational purposes only. The products, designs, and services described here are entirely fictional and do not exist in reality.</p>
+
+						<p>No graphic design services or products listed on this site are available for purchase, and this store is not a real business. Any resemblance to real design studios, products, or entities is purely coincidental.</p>
+
+						<p>Please note: This project is meant to showcase design concepts and is not intended to mislead or advertise real-world services.</p>
+					</div>
+
+					<div class="container2">
+						<h2>Sign up to our email!</h2>
+						<label><b>Your email</b></label>
+						<br>
+						<input type="text" placeholder="Enter Email" name="email" required>
+						<br>
+						<div class="clearfix">
+							<button type="submit" onclick="alert('Thanks for subscribing! Be sure to keep an eye out for our next newsletter!')" class="signup">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="lightbox" class="lightbox">
+				<span class="close">&times;</span>
+				<img class="lightbox-content" id="lightbox-img" alt="">
+			</div>
+
+			<footer>
+						<div class="footerbox service1">
+							<a href="index1.html">
+								<p>Home</p>
+							</a>
+							<br>
+							<a href="aboutpage.html">
+								<p>About</p>
+							</a>
+							<br>
+						</div>
+
+			</footer>
+		</div>
+
+		<script>
+			const lightbox = document.getElementById('lightbox');
+			const lightboxImg = document.getElementById('lightbox-img');
+			const closeBtn = document.querySelector('.close');
+			const triggers = document.querySelectorAll('.lightbox-trigger');
+
+			function openLightbox(src) {
+				lightbox.style.display = 'flex'; // Show lightbox
+				lightboxImg.src = src; // Set image source
+			}
+
+			function closeLightbox() {
+				lightbox.classList.add('fade-out');
+				setTimeout(() => {
+					lightbox.style.display = 'none';
+					lightbox.classList.remove('fade-out');
+				}, 500); // Match the fade-out duration
+			}
+
+			triggers.forEach(trigger => {
+				trigger.addEventListener('click', function() {
+					openLightbox(this.src);
+				});
+			});
+
+			if (closeBtn) {
+				closeBtn.addEventListener('click', closeLightbox);
+			}
+
+			if (lightbox) {
+				lightbox.addEventListener('click', function(event) {
+					if (event.target === lightbox) { // Close if clicking outside the image
+						closeLightbox();
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
+

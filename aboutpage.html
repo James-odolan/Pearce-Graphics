@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gift Page</title>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<style>
+				.contact-main {
+					box-shadow: 
+			    rgba(6, 24, 44, 0.4) 0px 0px 5px 3px, /* Outer shadow with increased spread */
+			    rgba(6, 24, 44, 0.65) 0px 6px 10px -2px, /* Outer shadow with increased blur and offset */
+			    rgba(255, 255, 255, 0.08) 0px 2px 2px inset; /* Inner shadow with increased blur */
+					margin: auto;
+					border-radius: 15px;
+					max-width: 60vw;
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					background-color: #fbeec1;
+				}
+
+				.contact1 {
+					grid-column: span 1;
+				}
+				.contact1 img {
+					height: 100%;
+					border-radius: 15px 0px 0px 15px;
+				}
+
+				.contact2 {
+					grid-column: span 1;
+				}
+
+				.cont {
+					gap: 10px;
+			    display: flex;
+			    text-align: center;
+			    flex-direction: column;
+				}
+
+				.cont dd {
+					color: #2E2E2E;
+					text-align: center;
+					margin: auto;
+				}
+
+				.cont dt {
+					color: #2E2E2E;
+					font-weight: 600;
+				}
+				.cont h2 {
+					margin: 40px 0px 10px 0px;
+				}
+
+				.about-para {
+					max-width: 57vw;
+			    padding: 20px;
+			    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+			    background-color: #fbeec1;
+			    margin: 6% auto;
+				}
+
+				.about-lower {
+					box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+					margin: 0% auto 6% auto;
+					max-width: 60vw;
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+
+				}
+
+				.iframe {
+					width: 100%;
+					height: 100%;
+
+				}
+
+				.store {
+					filter: grayscale(1);
+					grid-column: span 1;
+				}
+
+				.page-heading {
+					text-align: center;
+					margin: 5% auto;
+				}
+		</style>
+	</head>
+		<h3 class="contact-heading">Contact us at: 0********** | Based in Harrogate</h3>
+		<header>
+			<div class="logo">
+				<img src="images/pearce-logo.png" alt="logo">
+			</div>
+		</header>
+
+		<div class="page-wrap">
+			<nav>
+				<ul>
+					<li><a href="index1.html">Home</a></li>
+					<li><a href="giftpage.html">Gifts</a></li>
+					<li><a href="aboutpage.html">About</a></li>
+					<li><a href="Reviewpage.html">Reviews</a></li>
+					<li><a href="Shoppingcart.html">Basket</a></li>
+				</ul>
+			</nav>
+		<body>
+
+			<div class="page-heading"><h1>About</h1></div>
+	   <div class="contact-main">
+
+        <div class="cont contact1"><img src="images/headshot.png" alt="picture of sarah"></div>
+
+        <div class="cont contact2"> 
+          <h2 class="cont"> Contact </h2>
+          <dl class="cont">
+               <dt> Name: </dt>
+               <dd> Sarah Pearce </dd>
+               <br>
+               <dt> Age: </dt>
+               <dd> 23 </dd>  
+               <br>
+               <dt> Location: </dt>
+               <dd> Harrogate </dd>
+               <br>
+               <dt> Email: </dt>
+               <dd> Spearce@gmail.com </dd>
+          </dl>
+        </div> 
+
+        <!--<div class="cont contact3"><img src="images/stuff.jpg" alt="case" width="400" Height="324"></div>-->
+      </div>
+	    <div class="about-para">
+	    	<p>This company is owned by Sarah Pearce who is beginning a graphic design business based in Harrogate. This business intends to sell products with unique illustrations and patterns, from the phone cases to printed out works. The intended at work is fairly unisex with an age range of 20 years plus.</p>
+	    	
+	    	<p>The main product at the moment is phone cases and printed out works with a nice light colour scheme and eye-catching patterns. All artworks are sourced from the family business. As you can see above the photos show artwork can be personalised upon request</p>
+	    </div>
+
+	    <div class="about-lower">
+			 	<div id="googleMap">
+					<iframe class="iframe" src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5755939483642578%2C53.97431320742278%2C-1.5034961700439455%2C54.01079508772353&amp;layer=hot&amp;marker=53.99255814299025%2C-1.5395450592041016"></iframe>
+			</div>
+			<div class="store">
+					<img src="images/store.png">
+				</div>
+			</div>
+			<div class="about-para">
+	    	<p>Whether you're looking for unique graphics, custom illustrations, or something completely out-of-the-box, you're in the right place. Every project is crafted with care to bring your ideas to life in a way that feels uniquely you. Drop by the store now and explore our latest designs – we're excited to help you create something truly special!</p>
+	    	
+	    	<p>At Pearce Graphics, we believe that design should tell a story—your story. Whether you're a small business, a budding entrepreneur, or simply someone looking for a personal touch, our designs are made to connect and inspire. From unique branding to custom artwork, we're here to collaborate with you every step of the way. Drop by the store now and let's turn your vision into something memorable and meaningful!</p>
+	    </div>
+			<footer>	
+	<div class="footer">
+		<div class="footercontainer">
+			<div class="footerbox service1">
+				<a href="index1.html">
+					<p>Home</p>
+				</a>
+				<br>
+				<a href="aboutpage.html">
+					<p>About</p>
+				</a>
+				<br>					
+				<a href="shoppingcart.html">
+					<p>Shopping Cart</p>
+				</a>
+				<br>
+			</div>	 </footer>
+			    </div>
+			
+		</div>
+	</body>
+</html>
